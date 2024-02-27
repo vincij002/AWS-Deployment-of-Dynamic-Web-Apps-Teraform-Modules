@@ -1,4 +1,4 @@
-#ec2 variables
+#ecs variables
 variable "project_name" {}
 variable "environment" {}
 variable "ecs_task_execution_role_arn" {}
