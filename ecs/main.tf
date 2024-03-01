@@ -19,7 +19,7 @@ resource "aws_cloudwatch_log_group" "log_group" {
 
 # create task definition
 resource "aws_ecs_task_definition" "ecs_task_definition" {
-  family                   = "${var.project_name}-${project.environment}-td"
+  family                   = "${var.project_name}-${var.environment}-td"
   execution_role_arn       = var.ecs_task_execution_role_arn
   network_mode             = "awsvpc"
   requires_compatibilities = ["FARGATE"]
